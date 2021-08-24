@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_1.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="./css/abc.css">
+    <link rel="stylesheet" href="./css/danhmuc.css">
+    <title>Evo Fashion</title>
+</head>
+<body>
+    <header id="header">
+        <!-- middle header -->
+        <div class="mid-header">
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 logo "> 
+            <a href="index.html"><h1 style="color: brown;">EVOFASHION</h1></a> </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 header-search"> 
+            <!--<form method="post" id="frm" action="">-->
+            <div style="margin-top:25px;">
+                <input type="text" onkeypress="searchForm(event);" value="" placeholder="Nhập từ khóa tìm kiếm..." id="key" class="input-control">
+                <button style="margin-top:5px;" type="submit"> <i class="fa fa-search" onclick="return search();"></i> </button>
+            </div>
+            <!--</form>--> 
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 mini-cart" style="display: flex; justify-content: space-around;">
+            <div class="wrapper-mini-cart">
+                <span class="icon"><i class="fa fa-shopping-cart"></i></span> <a href="cart"></i></a>
+            </div>
+            <div style="line-height: 60px; font-size: 17px; font-weight: 500;">
+                <span><a href="#">Đăng nhập</a></span>
+                <span style="font-weight: 900 !important;"> / </span>
+                <span><a href="#">Đăng ký</a></span></div>
+            </div>
+        </div>
+        </div>
+        <!-- end middle header --> 
+        <!-- bottom header -->
+        <div class="bottom-header" style="border-bottom: 1px solid; border-color: #d8d8d8;">
+        <div class="container">
+            <div class="clearfix">
+            <ul class="main-nav hidden-xs hidden-sm list-unstyled">
+                <li class="active"><a style="color: black; padding: 14px 40px !important;" href="/">Trang chủ</a></li>
+                <li><a href="/" style="color: black;" class="abcd">Giới thiệu</a></li>
+                <li class="has-submenu"> 
+                
+                <a href="/" style="color: black;" class="abcd">Sản phẩm</a>
+                
+                </li>
+                <li><a href="#" class="abcd" style="color: black;">Giày dép</a></li>
+                <li><a href="#" class="abcd" style="color: black;">Phụ kiện</a></li>
+                <li><a href="#" class="abcd" style="color: black;">Tin tức</a></li>
+                <li><a href="#" class="abcd" style="color: black;">Liên hệ</a></li>
+            </ul>
+            <!-- <a href="javascript:void(0);" class="toggle-main-menu hidden-md hidden-lg"> <i class="fa fa-bars"></i> </a> -->
+            <ul class="list-unstyled mobile-main-menu hidden-md hidden-lg" style="display:none">
+                <li class="active"><a href="index.php">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="index.php?controller=tintuc">Tin tức</a></li>
+                <li><a href="index.php?controller=lienhe">Liên hệ</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <!-- end bottom header -->
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sroll-top">
+                    <ul class="product-category">
+                        <li class="category-1">
+                            <a class="a-1" href="#">Khoảng giá</a>
+                            <i class="fa fa-angle-right active"></i>
+                        </li>
+                        <ul>
+                            <li class="category-2">
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box">
+                                    <label for="check-box" >Dưới 300.000₫</label>
+                                </div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box1">
+                                    <label for="check-box1">300.000₫ - 500.000₫</label>
+                                </div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box2">
+                                    <label for="check-box2">500.000₫ - 1.000.000₫</label>
+                                </div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box3">
+                                    <label for="check-box3">Trên 1.000.000₫</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="product-category">
+                        <li class="category-1">
+                            <a class="a-2" href="#">Kích cỡ</a>
+                            <i style="top: 206px" class="fa fa-angle-right"></i>
+                        </li>
+                        <li class="category-2" style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box4">
+                                    <label for="check-box4">XS</label>
+                                </div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box5">
+                                    <label for="check-box5">S</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box6">
+                                    <label for="check-box6">M</label>
+                                </div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box7">
+                                    <label for="check-box7">L</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box8">
+                                    <label for="check-box8">XL</label>
+                                </div>
+                                <div class="category-item">
+                                    <input type="checkbox" name="" id="check-box9">
+                                    <label for="check-box9">XXL</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="product-category">
+                        <li class="category-1">
+                            <a class="a-3" href="#">Màu sắc</a>
+                            <i style="top: 340px;" class="fa fa-angle-right"></i>
+                        </li>
+                        <li class="category-2">
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box10">
+                                <label for="check-box10">Xanh biển</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box11">
+                                <label for="check-box11">Đỏ</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box12">
+                                <label for="check-box12">Hồng</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box13">
+                                <label for="check-box13">Vàng</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box14">
+                                <label for="check-box14">Tím</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box15">
+                                <label for="check-box15">Đen</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box16">
+                                <label for="check-box16">Trắng</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box17">
+                                <label for="check-box17">Nâu</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box18">
+                                <label for="check-box18">Cam</label>
+                            </div>
+                            <div class="category-item">
+                                <input type="checkbox" name="" id="check-box19">
+                                <label for="check-box19">Xanh lá cây</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col-lg-7">
+                        <h3 class="h3-danhmuc">ĐẦM - VÁY</h3>
+                    </div>
+                    <div class="col-lg-5 danhmuc">
+                        <p>Sắp xếp theo:</p>
+                        <select class="select-1">
+                            <option class="option-1" value="default">Mặc định</option>
+                            <option class="option-1" value="manual">Sản phẩm nổi bật</option>
+                            <option class="option-1" value="price-asc">Giá: Tăng dần</option>
+                            <option class="option-1" value="price-desc">Giá: Giảm dần</option>
+                            <option class="option-1" value="alpha-asc">Tên: A-Z</option>
+                            <option class="option-1" value="alpha-desc">Tên: Z-A</option>
+                            <option class="option-1" value="created-desc">Mới nhất</option>
+                            <option class="option-1" value="created-asc">Cũ nhất</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/img1.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/img1_1.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+    
+                        <div class="label-product">
+                            <span class="lbsale">31%</span>
+                        </div>
+                        <div class="div_product"><p class="product-sale"></p>Đầm Ruffle Họa Tiết Hoa Gừng</p></div>
+                        <div class="value-fs"><strong class="value-sale">450.000₫</strong> <small class="sale_sale">650.000₫</small></div>
+                    </div>
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/img2.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/img2_2.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+                        <div class="label-product">
+                            <span class="lbsale">40%</span>
+                        </div>
+                        <div class="div_product"><p class="product-sale"></p>Đầm Polka Dot Đen Và Trắng Casual</p></div>
+                        <div class="value-fs"><strong class="value-sale">450.000₫</strong> <small class="sale_sale">750.000₫</small></div>
+                    </div>
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/img3.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/img3_3.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+                        <div class="label-product">
+                            <span class="lbsale">44%</span>
+                        </div>
+                        <div class="div_product"><p class="product-sale"></p>Đầm Ruffle Họa Tiết Màu Vàng</p></div>
+                        <div class="value-fs"><strong class="value-sale">250.000₫</strong> <small class="sale_sale">450.000₫</small></div>
+                    </div>
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/img4.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/img4_4.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+                        <div class="label-product">
+                            <span class="lbsale">54%</span>
+                        </div>
+                        <div class="div_product"><p class="product-sale"></p>Flutter Tay Áo In Hoa</p></div>
+                        <div class="value-fs"><strong class="value-sale">250.000₫</strong> <small class="sale_sale">554.000₫</small></div>
+                    </div>
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/tt1.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/tt1_1.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+                        <div class="div_product"><p class="product-sale"></p>Ngẫu Nhiên Kẻ Sọc Bên Khe Váy</p></div>
+                        <div class="value-fs"><strong class="value-sale">250.000₫</strong></div>
+                    </div>
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/tt2.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/tt2_2.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+                        <div class="div_product"><p class="product-sale"></p>Đầm Nút Họa Tiết Hoa Màu Xanh Lá</p></div>
+                        <div class="value-fs"><strong class="value-sale">250.000₫</strong></div>
+                    </div>
+                    
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/pk1.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/pk1_1.jpg" alt="" 
+                                width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+                        <div class="label-product">
+                            <span class="lbsale">24%</span>
+                        </div>
+                        <div class="div_product"><p class="product-sale"></p>Crossbody lá Thư Màu Vàng Casual</p></div>
+                        <div class="value-fs"><strong class="value-sale">190.000₫</strong> <small class="sale_sale">250.000₫</small></div>
+                    </div>
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/pk2.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/pk2_2.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+                        <div class="label-product">
+                            <span class="lbsale">46%</span>
+                        </div>
+                        <div class="div_product"><p class="product-sale"></p>Satchels Cá Sấu Hồng Casual</p></div>
+                        <div class="value-fs"><strong class="value-sale">300.000₫</strong> <small class="sale_sale">560.000₫</small></div>
+                    </div>
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/pk3.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/pk3_3.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+                        <div class="div_product"><p class="product-sale"></p>Bộ Túi Màu Ngọc Lam Boho</p></div>
+                        <div class="value-fs"><strong class="value-sale">286.000₫</strong></div>
+                    </div>
+                    <div class="col-6 col-sm-3 fl-sale">
+                        <div class="primary-img"><a href="#">
+                                <img id="body-img-h" src="img/pk4.jpg" alt=""
+                                    width="100%">
+                            </a></div>
+                        <div class="secondary-img"> <a href="#">
+                                <img id="body-img-h" src="img/pk4_4.jpg" alt=""
+                                    width="100%">
+                                <div class="btn-in-img">
+                                    <button type="button" class="add-gds"><i class="fas fa-link"></i></button>
+                                </div>
+                            </a></div>
+    
+                        <div class="label-product">
+                            <span class="lbsale">40%</span>
+                        </div>
+                        <div class="div_product"><p class="product-sale"></p>Crossbody Hoa Khaki Boho</p></div>
+                        <div class="value-fs"><strong class="value-sale">209.000₫</strong> <small class="sale_sale">350.000₫</small></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            
+            
+    </div>
+
+    <!-- <footer class="footer mt-2">
+    <div class="home-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="rc-bottom">
+                        <div class="rc-bottom-img"><img class="img-bottom" src="img/store_policy_1.png" alt="">
+                        </div>
+                        <div class="rc-ct">
+                            <a href="#">MIỄN PHÍ GIAO HÀNG</a>
+                            <p>Với hóa đơn từ 300.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="rc-bottom">
+                        <div class="rc-bottom-img"><img class="img-bottom" src="img/store_policy_2.png" alt="">
+                        </div>
+                        <div class="rc-ct">
+                            <a href="#">30 NGÀY ĐỔI SẢN PHẨM</a>
+                            <p>Đổi sản phẩm trong vòng 30 ngày</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="rc-bottom">
+                        <div class="rc-bottom-img"><img class="img-bottom" src="img/store_policy_3.png" alt="">
+                        </div>
+                        <div class="rc-ct">
+                            <a href="#">MUA HÀNG (8H30 - 22H30, T2 - CN)</a>
+                            <p>Hotline Mua hàng 1800 1800</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="rc-bottom">
+                        <div class="rc-bottom-img"><img class="img-bottom" src="img/store_policy_4.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#">HỆ THỐNG SHOWROOM</a>
+                            <p>10 showroom trên toàn hệ thống</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer pt-3">
+        <div class="container pb-4">
+            <div class="row">
+                <div class="col-12 col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-sm-4">
+                            <h3>thông tin công ty</h3>
+                            <ul>
+                                <li><a class="footer_link" href="#">Giới thiệu Evo Fashion</a></li>
+                                <li><a class="footer_link" href="#">Chương trình affiliate</a></li>
+                                <li><a class="footer_link" href="#">Blogger thời trang</a></li>
+                                <li><a class="footer_link" href="#">Chiết khấu cho sinh viên</a></li>
+                                <li><a class="footer_link" href="#">Tuyển dụng nhà thiết kế</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-sm-4">
+                            <h3>hỗ trợ khách hàng</h3>
+                            <ul>
+                                <li><a class="footer_link" href="#">Phí vận chuyển</a></li>
+                                <li><a class="footer_link" href="#">Trả lại</a></li>
+                                <li><a class="footer_link" href="#">Hướng dẫn đặt hàng</a></li>
+                                <li><a class="footer_link" href="#">Làm thế nào để theo dõi</a></li>
+                                <li><a class="footer_link" href="#">Hướng dẫn kích thước</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-sm-4">
+                            <h3>dịch vụ khách hàng</h3>
+                            <ul>
+                                <li><a class="footer_link" href="#">Liên hệ với chúng tôi</a></li>
+                                <li><a class="footer_link" href="#">Phương thức thanh toán</a></li>
+                                <li><a class="footer_link" href="#">Điểm thưởng</a></li>
+                                <li><a class="footer_link" href="#">Trung tâm dùng thử miễn phí</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-12 col-sm-12">
+                            <div class="footer-playment">
+                                <h3>phương thức thanh toán</h3>
+                                <img style="width: 11%;" src="img/payment_1.svg" alt="">
+                                <img style="width: 11%;" src="img/payment_2.svg" alt="">
+                                <img style="width: 11%;" src="img/payment_3.svg" alt="">
+                                <img style="width: 11%;" src="img/payment_4.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-6">
+                    <h3>kết nối với chúng tôi</h3>
+                    <ul>
+                        <li><a href="#">Địa chỉ: 30 Đường 2/9, Phường Bình Hiên, Quận Hải Châu, Đà Nẵng</a></li>
+                        <li><a href="#">Điện thoại: 0867573713</a></li>
+                    </ul>
+                    <ul class="footer-icon d-flex justify-content-start">
+                        <li><a href="#"><i id="icon_link" title="Facbook" class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i id="icon_link" title="Twitter" class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i id="icon_link" title="Instagram" class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i id="icon_link" title="Youtube" class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <div id="footer-dk">
+                        <h3>đăng ký nhận tin từ EVO FASHION</h3>
+                         <input type="text" class="form-control ipemail" aria-label="Default"
+                            aria-describedby="inputGroup-sizing-default">
+                        <button type="button" class="btn btn-secondary">Đăng ký</button> 
+                        <form target="_blank" class="has-validation-callback">
+            <input type="email" class="form-control" value="" placeholder="Email của bạn" name="EMAIL" id="mail" aria-label="Đăng ký nhận tin">
+            <button name="subscribe" id="subscribe">Đăng ký</button>
+          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright clearfix py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 cpr-content">
+                        <span>© Bản quyền thuộc về Evo Themes <span class="s480-f">|</span> Cung cấp bởi <a
+                                href="#">Sapo</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> -->
+</body>
+</html>

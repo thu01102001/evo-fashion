@@ -1,0 +1,31 @@
+.bread-crumb {
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid #f5f5f5;
+    border-top: 1px solid #f5f5f5;
+    background-color: #fff;
+}
+.container, .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bread-crumb .breadcrumb {
+    background: transparent;
+    color: rgba(112,126,137,0.5);
+    padding: 0;
+}
+.breadcrumb li {
+    display: inline;
+}
+.bread-crumb .breadcrumb a {
+    color: #707e89;
+}
+.breadcrumb li>a>span {
+    color: #333;
+}
+.breadcrumb li span {
+    display: inline;
+    color: #af1713;
+    padding: 0 2px;
+    font-size: 1em;
+}
